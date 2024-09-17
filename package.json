@@ -1,0 +1,19 @@
+{
+  "name": "aveij",
+  "version": "1.0.0",
+  "description": "landing page",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/ViktorovVik/landing-aveij.git)"
+  },
+  "author": "Viktor Shuntikov",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "sass": "^1.78.0"
+  }
+}
