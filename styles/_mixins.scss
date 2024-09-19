@@ -7,3 +7,13 @@
    column-gap: $column-gap;
    row-gap: $row-gap;
 }
+
+@mixin font($family: 'Roboto', $size: 16, $weight: 400, $color: #212529, $style: normal) {
+   font: {
+      family: $family;
+      size: $size;
+      weight: $weight;
+      style: $style;
+   }
+   color: $color;
+}

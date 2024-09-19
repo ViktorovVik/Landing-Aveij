@@ -3,25 +3,57 @@
 @use 'sass:color';
 
 .header {
-   padding: 15px 0 70px 0;
+   padding: 15px 0 40px 0;
    width: 100%;
 }
 
 .header__wrapper {
    @include m.d-flex(space-between, unset);
+
+   @media (max-width: v.$media_lg) {
+      align-items: center;
+   }
 }
 
 .header__content {
    display: flex;
-   column-gap: 200px;
+   gap: 200px;
+
+   @media (max-width: v.$media_lg) {
+      gap: 160px;
+   }
+
+   @media (max-width: v.$media_md) {
+      gap: 100px;
+   }
+
+   @media (max-width: 653px) {
+      gap: 50px;
+   }
 }
 
 .nav {
+
+   &__list {
+      @media (max-width: v.$media_lg) {
+         display: flex;
+         gap: 20px;
+      }
+
+      @media (max-width: v.$media_sm) {
+         display: none;
+      }
+   }
+
    &__list-item {
       margin: 0 0 8px 0;
    font-size: 1rem;
    line-height: 140%;
    color: v.$black-color;
+
+   @media (max-width: v.$media_lg) {
+        margin: 0; 
+      }
    }
 
    &__list-item:last-child {
@@ -31,7 +63,7 @@
    &__list-link {
       position: relative;
 
-      &:before {
+      &::before {
          content: "";
          position: absolute;
          left: 0;
@@ -50,7 +82,8 @@
          transform: scaleX(1);
          transform-origin: left bottom;
        }
-   }        
+   } 
+   
 }
 
 
@@ -58,4 +91,8 @@
    font-size: 1rem;
    line-height: 140%;
    color: v.$black-color;
+
+   @media (max-width: v.$media_sm) {
+      display: none;
+   }
 }
