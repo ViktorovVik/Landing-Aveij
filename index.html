@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-   <link rel="icon" href="assets/favicon-16x16.png">
-   <link rel="stylesheet" href="dist/main.css">
-   <title>Aveij</title>
-</head>
-<body>
-   <header class="header" aria-label="header section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon-16x16.png" />
+    <link rel="stylesheet" href="dist/main.css" />
+    <title>Aveij</title>
+  </head>
+  <body>
+    <header class="header" aria-label="header section">
       <div class="container">
-         <div class="header__wrapper">
-            <a href="" class="logo">
-               <img src="./assets/logo/logo.svg" alt="Aveij">
-            </a>
-            <div class="header__content">
-               <nav class="header__nav nav" aria-label="header navigation">
-                  <ul class="nav__list" aria-label="header nav list links">
-                     <li class="nav__list-item"><a href="#" class="nav__list-link">О нас</a></li>
-                     <li class="nav__list-item"><a href="#" class="nav__list-link">Проекты</a></li>
-                     <li class="nav__list-item"><a href="#" class="nav__list-link">Материалы</a></li>
-                     <li class="nav__list-item"><a href="#" class="nav__list-link">Отзывы</a></li>
-                  </ul>
-               </nav>
-               <a href="tel:79999999999" class="phone">+7 999 999 99 99</a>
-            </div>
-         </div>
+        <div class="header__wrapper">
+          <a href="" class="logo">
+            <img src="./assets/logo/logo.svg" alt="Aveij" />
+          </a>
+          <div class="header__content">
+            <nav class="header__nav nav" aria-label="header navigation">
+              <ul class="nav__list" aria-label="header nav list links">
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">О нас</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Проекты</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Материалы</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" class="nav__list-link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="tel:79999999999" class="phone">+7 999 999 99 99</a>
+          </div>
+        </div>
       </div>
-   </header>
-</body>
+    </header>
+    <main class="main" aria-label="main content">
+      <section class="hero-section" aria-label="hero section">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__up">
+              <h1 class="hero__title">
+                Эксклюзивная и нестандартная мебель для дома
+              </h1>
+              <button type="button" class="hero__btn">Заказать проект</button>
+            </div>
+              <div class="hero__offer">
+                <img class="hero__mobile-img" src="./assets/webp/mobile-img.webp" alt="exclusive furniture">
+               <div class="hero__offer-left">
+                  <p class="hero__offer-text">Мы можем произвести любую мебель для вашего проекта и найти производственное решение любой задумки.</p>
+                  <img src="./assets/webp/hero-small.webp" alt="" class="hero__offer-img hero__offer-small"></img>
+               </div>
+               <img src="./assets/webp/hero-big.webp" alt="exclusive furniture" class="hero__offer-img hero__offer-big">
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
