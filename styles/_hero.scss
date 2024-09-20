@@ -3,6 +3,10 @@
 
 .hero-section {
    padding: 0 0 120px 0;
+
+   @media (max-width: v.$media_sm) {
+      padding: 0 0 50px 0;
+   }
 }
 
 
@@ -17,24 +21,24 @@
    }
 }
 .hero__title {
-   @include m.font('Inter' sans-serif, 62px, 400);
+   @include m.font('Inter' sans-serif, 62px);
    text-transform: uppercase;
    max-width: 605px;
    line-height: 120%;
 
    @media (max-width: v.$media_xl) {
-      @include m.font('Inter' sans-serif, 50px, 400);
-      max-width: 505px;
+      @include m.font('Roboto' sans-serif, 50px);
+      width: 505px;
    }
 
    @media (max-width: v.$media_lg) {
-      @include m.font('Inter' sans-serif, 40px, 400);
-      max-width: 400px;
+      @include m.font('Roboto' sans-serif, 40px);
+      width: 400px;
    }
 
    @media (max-width: v.$media_md) {
-      @include m.font('Inter' sans-serif, 30px, 400);
-      max-width: 300px;
+      @include m.font('Roboto' sans-serif, 30px);
+      width: 300px;
    }
 
    @media (max-width: v.$media_sm) {

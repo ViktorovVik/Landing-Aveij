@@ -1,0 +1,105 @@
+@use 'vars' as v;
+@use 'mixins' as m;ss
+
+.section-time {
+   padding: 0 0 120px 0;
+
+   @media (max-width: v.$media_sm) {
+      padding: 0 0 50px 0;
+   }
+}
+
+.time {
+   @include m.d-flex($justify: unset, $align: star, $wrap: unset, $direction: row, $column-gap: 140px, $row-gap: 0);
+
+   @media (max-width: v.$media_lg) {
+      @include m.d-flex($justify: unset, $align: star, $wrap: unset, $direction: row, $column-gap: 100px, $row-gap: 0);
+   }
+
+   @media (max-width: v.$media_md) {
+      @include m.d-flex($justify: unset, $align: star, $wrap: unset, $direction: row, $column-gap: 70px, $row-gap: 0);
+   }
+
+   @media (max-width: v.$media_sm) {
+      @include m.d-flex($justify: unset, $align: center, $wrap: unset, $direction: column, $column-gap: 70px, $row-gap: 0);
+   }
+}
+.time__title {
+   @include m.font('Roboto' sans-serif, 48px);
+   line-height: 1.4;
+   max-width: 562px;
+   width: 100%;
+
+   @media (max-width: v.$media_lg) {
+      @include m.font('Roboto' sans-serif, 38px);
+    }
+
+    @media (max-width: v.$media_md) {
+      @include m.font('Roboto' sans-serif, 30px);
+   }
+
+   @media (max-width: v.$media_sm) {
+      display: none;
+   }
+}
+
+.time__title-mobile {
+   display: none;
+   @include m.font('Roboto' sans-serif, 20px);
+
+   @media (max-width: v.$media_sm) {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: start;
+   }
+}
+
+.time__content {
+   @include m.d-flex($justify: unset, $align: unset, $wrap: unset, $direction: column, $row-gap: 44px);
+   
+   @media (max-width: v.$media_sm) {
+      @include m.d-flex($justify: unset, $align: unset, $wrap: unset, $direction: column, $row-gap: 32px);
+   }
+}
+.time__text {
+   max-width: 428px;
+   width: 100%;
+}
+
+.text {
+   @include m.font('Roboto' sans-serif);
+   line-height: 1.4;
+
+   &__about {
+      margin-bottom: 15px;
+   }
+
+   @media (max-width: v.$media_md) {
+      font-size: 14px;
+   }
+}
+.benefits {
+   max-width: 140px;
+
+   &__item {
+      margin-bottom: 24px;
+
+      strong {
+               @include m.font($family: 'Roboto' sans-serif, $size: 36px); 
+
+               @media (max-width: v.$media_sm) {
+                  @include m.font($family: 'Roboto' sans-serif, $size: 24px);
+                  max-width: 70px;
+               }
+            }
+
+      span {
+         @include m.font('Roboto' sans-serif);
+         line-height: 1.4;
+         display: block;
+      }      
+   }
+   @media (max-width: v.$media_sm) {
+      max-width: 164px;
+   }
+}
