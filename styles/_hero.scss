@@ -4,6 +4,10 @@
 .hero-section {
    padding: 0 0 120px 0;
 
+   @media (max-width: v.$media_md) {
+      padding: 0 0 80px 0;
+   }
+
    @media (max-width: v.$media_sm) {
       padding: 0 0 50px 0;
    }
@@ -13,7 +17,7 @@
 .hero__up {
    display: flex;
    justify-content: space-between;
-   padding: 0 0 40px 0;
+   padding: 0 0 50px 0;
 
    @media (max-width: v.$media_sm) {
       flex-direction: column;
@@ -21,23 +25,24 @@
    }
 }
 .hero__title {
-   @include m.font('Inter' sans-serif, 62px);
+   font-weight: 400;
+   font-size: 62px;
    text-transform: uppercase;
    max-width: 605px;
-   line-height: 120%;
+   line-height: 1.2;
 
    @media (max-width: v.$media_xl) {
-      @include m.font('Roboto' sans-serif, 50px);
+      font-size: px;
       width: 505px;
    }
 
    @media (max-width: v.$media_lg) {
-      @include m.font('Roboto' sans-serif, 40px);
+      font-size: 40px;
       width: 400px;
    }
 
    @media (max-width: v.$media_md) {
-      @include m.font('Roboto' sans-serif, 30px);
+      font-size: 30px;
       width: 300px;
    }
 
@@ -46,7 +51,7 @@
    }
 }
 .hero__btn {
-   @include m.font('Roboto' sans-serif, 18px);
+   font-size: 18px;
    position: relative;
    transition: 0.3s;
    align-self: end;
@@ -96,17 +101,17 @@
 
 }
 .hero__offer-text {
-   @include m.font('Roboto' sans-serif, 20px);
+   font-size: 20px;
    line-height: 140%;
    max-width: 445px;
 
    @media (max-width: v.$media_xl) {
-      @include m.font('Roboto' sans-serif, 18px);
+      font-size: 18px;
       max-width: 405px;
    }
 
    @media (max-width: v.$media_lg) {
-      @include m.font('Roboto' sans-serif, 16px);
+      font-size: 16px;
       max-width: 330px;
    }
 

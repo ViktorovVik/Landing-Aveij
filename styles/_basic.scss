@@ -1,11 +1,15 @@
+@use 'vars' as v;
+
 * {
    box-sizing: border-box;
 }
 
 body {
    font-family: 'Roboto', sans-serif;
+   line-height: 1.4;
    font-weight: 400;
    margin: 0;
+   color: v.$black-color;
 }
 
 .container {
