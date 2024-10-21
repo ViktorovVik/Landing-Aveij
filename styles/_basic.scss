@@ -13,10 +13,11 @@ body {
 }
 
 .container {
-   max-width: 1406px;
-   padding: 0 15px;
-   margin: 0 auto;
+      max-width: 1406px;
+      padding: 0 15px;
+      margin: 0 auto;
 }
+   
 
 h1,
 h2,
@@ -26,7 +27,8 @@ h5,
 h6,
 ul,
 p,
-button {
+button,
+figure {
    margin: 0;
    padding: 0;
 }

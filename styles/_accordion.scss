@@ -16,10 +16,10 @@
 .accordion__container {
   @include m.d-flex($justify: space-between, $align: unset);
 
-  @media (max-width: v.$media_sm) {
+  @media (max-width: v.$media_xl) {
+      max-width: 100%;
       flex-direction: column;
   }
-
 }
 
 .accordion__title {
@@ -27,25 +27,15 @@
    max-width: 420px;
    font-weight: 400;
    width: 100%;
-   height: 66px;
 
-   @media (max-width: v.$media_lg) {
-      font-size: 38px;
-      max-width: 380px;
-   }
-
-   @media (max-width: v.$media_md) {
-      font-size: 30px;
-      max-width: 300px;
+   @media (max-width: v.$media_sm) {
+      font-size: 28px;
+      margin-bottom: 20px;
    }
 }
 
 .accordion__inner {
    margin-top: 15px;
-
-   @media (max-width: v.$media_md) {
-      margin-top: 5px;
-   }
 }
 
 .accordion__subtitle {
@@ -53,8 +43,11 @@
    margin-bottom: 44px;
    max-width: 325px;
    font-weight: 400;
-}
 
+   @media (max-width: v.$media_sm) {
+      margin-bottom: 28px;
+   }
+}
 
 .accordion__block .accordion__item:first-child {
    padding-top: 0;
@@ -64,9 +57,8 @@
       display: inline-block;
       width: 265px;
    }
+
 }
-
-
 
 .accordion__block .accordion__item:nth-child(4),
 .accordion__block .accordion__item:nth-child(5) {
@@ -74,20 +66,14 @@
 
 }
 
-
-
 .accordion__item {
    border-bottom: 1px solid #000;
    padding: 36px 0 24px 0;
    width: 676px;
 
    @media (max-width: v.$media_xl) {
-      width: 423px;
+      width: 100%;
       padding: 30px 0 10px 0;
-   }
-
-   @media (max-width: v.$media_md) {
-      width: 360px;
    }
 }
 
@@ -103,6 +89,12 @@
    }
 }
 
+.accordion__trigger:first-child {
+   @media (max-width: v.$media_xl) {
+
+   }
+}
+
 .accordion__trigger--title {
    font-size: 36px;
    flex-basis: 328px;
@@ -112,13 +104,18 @@
       flex-basis: 0;
    }
 
-   @media (max-width: v.$media_md) {
+   @media (max-width: v.$media_sm) {
       font-size: 28px;
    }
 }
 
 .accordion__content {
-    display: none;
+   display: none;
+
+    @media (max-width: v.$media_xl) {
+      display: block;
+   }
+    
 }
 
 .accordion__item--active .accordion__content{
@@ -129,4 +126,10 @@
    font-size: 16px;
    font-weight: 400;
    max-width: 329px;
+
+   @media (max-width: v.$media_xl) {
+      max-width: 100%;
+   }
 }
+
+
