@@ -12,9 +12,11 @@
     <link rel="icon" href="assets/favicon-16x16.png" />
     <link rel="stylesheet" href="dist/main.css" />
     <title>Aveij</title>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <header class="header none1" aria-label="header section">
+    <header class="header none" aria-label="header section">
       <div class="container">
         <div class="header__wrapper">
           <a href="" class="logo">
@@ -43,7 +45,7 @@
       </div>
     </header>
     <main class="main" aria-label="main content">
-      <section class="hero-section none1" aria-label="hero section">
+      <section class="hero-section none" aria-label="hero section">
         <div class="container">
           <div class="hero">
             <div class="hero__up">
@@ -63,7 +65,7 @@
           </div>
         </div>
       </section>
-      <section class="section-time none1" aria-label="section time">
+      <section class="section-time none" aria-label="section time">
         <div class="container">
           <div class="time">
             <h2 class="time__title">Более 5 лет создаем мебель для вашего комфорта</h2>
@@ -92,7 +94,7 @@
           </div>
         </div>
       </section>
-      <section class="section-accordion none1">
+      <section class="section-accordion none">
         <div class="container accordion__container">
           <h2 class="accordion__title">Как мы работаем</h2>
             <div class="accordion__inner">
@@ -157,7 +159,7 @@
                     <line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
                     </svg>                    
                 </div>
-                <a href="#" class="info-card__link"></a>
+                <a href="#!" class="info-card__link"></a>
               </figure>
               <figure class="info-card card--kitchen" aria-label="card kitchen">
                 <img class="info-card__img" src="./assets/cards-webp/kitchen.webp" alt="kitchen">
@@ -169,7 +171,7 @@
                   <line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
                   </svg>                    
               </div>
-              <a href="#" class="info-card__link"></a>
+              <a href="#!" class="info-card__link"></a>
             </figure>
             <figure class="info-card card--living-room" aria-label="card living room">
               <img class="info-card__img" src="./assets/cards-webp/living-room.webp" alt="living room">
@@ -181,7 +183,7 @@
                 <line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
                 </svg>                    
             </div>
-            <a href="#" class="info-card__link"></a>
+            <a href="#!" class="info-card__link"></a>
           </figure>
           <figure class="info-card card--bathroom" aria-label="card bathroom">
             <img class="info-card__img" src="./assets/cards-webp/bathroom.webp" alt="bathroom">
@@ -193,7 +195,7 @@
               <line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
               </svg>                    
           </div>
-          <a href="#" class="info-card__link"></a>
+          <a href="#!" class="info-card__link"></a>
         </figure>
         <figure class="info-card card--bedroom" aria-label="card bedroom">
           <img class="info-card__img" src="./assets/cards-webp/bedroom.webp" alt="bedroom">
@@ -205,7 +207,7 @@
             <line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
             </svg>                    
         </div>
-        <a href="#" class="info-card__link"></a>
+        <a href="#!" class="info-card__link"></a>
       </figure>
       <figure class="info-card card--dresser" aria-label="card dresser">
         <img class="info-card__img" src="./assets/cards-webp/dresser.webp" alt="dresser">
@@ -217,13 +219,46 @@
           <line x1="11.722" y1="0.985145" x2="0.985134" y2="11.722" stroke="white"/>
           </svg>                    
       </div>
-      <a href="#" class="info-card__link"></a>
+      <a href="#!" class="info-card__link"></a>
     </figure>
             </div>
           </div>
         </div>
       </section>
+      <section class="reviews" aria-label="reviews section">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h4>
+          <ul class="reviews-wrapper">
+            <li class="reviews__item">
+              <article class="reviews-card">
+                <div class="reviews-card__icon">
+                  <img src="./assets/webp/quotation-marks.svg" alt="кавычки">
+                </div>
+                <h3 class="reviews-card__subtitle">Игорь Антонов</h3>
+                <p class="reviews-card__text">Обратилась к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу. Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем уровне.</p>
+              </article>
+            </li>
+            <li class="reviews__item">
+              <article class="reviews-card">
+                <div class="reviews-card__icon">
+                  <img src="./assets/webp/quotation-marks.svg" alt="кавычки">
+                </div>
+                <h3 class="reviews-card__subtitle">Ольга Иванова</h3>
+                <p class="reviews-card__text">После пары заказов у компании Aveji убедилась, что за мебелью теперь только к ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!</p>
+              </article>
+            </li>
+            <li class="reviews__item">
+              <article class="reviews-card">
+                <div class="reviews-card__icon">
+                  <img src="./assets/webp/quotation-marks.svg" alt="кавычки">
+                </div>
+                <h3 class="reviews-card__subtitle">Аркадий Макаров</h3>
+                <p class="reviews-card__text">Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое спасибо!</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <script src="js/accordion.js"></script>
   </body>
 </html>
