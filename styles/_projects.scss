@@ -3,6 +3,10 @@
 
 .section-projects {
    padding: 0 0 120px 0;
+
+   @media (max-width: v.$media_md) {
+      padding: 0 0 30px 0;
+   }
 }
 
 
@@ -14,6 +18,7 @@
 
    @media (max-width: v.$media_sm) {
       font-size: 28px;
+      margin: 0 0 15px 0;
    }
 }
 
@@ -28,7 +33,7 @@
    }
 
    @media (max-width: v.$media_md) {
-      @include m.d-flex($justify: center, $align: stretch, $wrap: nowrap, $direction: row, $column-gap: 0, $row-gap: 0);
+      @include m.d-flex($justify: unset, $align: stretch, $wrap: nowrap, $direction: row, $column-gap: 0, $row-gap: 0);
       gap: 1.25rem;
       overflow-x: auto;
       scroll-padding: 1.25rem;
