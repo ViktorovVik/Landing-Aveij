@@ -33,7 +33,10 @@ figure {
    padding: 0;
 }
 
-button {
+button,
+input {
+   background: none;
+   outline: none;
    border: none;
    background: none;
    cursor: pointer;
