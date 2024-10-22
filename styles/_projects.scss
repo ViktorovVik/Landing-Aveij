@@ -11,6 +11,10 @@
    font-size: 48px;
    color: v.$black-color;
    margin: 0 0 33px 0;
+
+   @media (max-width: v.$media_sm) {
+      font-size: 28px;
+   }
 }
 
 .projects__cards-wrapper {

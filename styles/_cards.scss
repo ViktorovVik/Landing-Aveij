@@ -44,6 +44,12 @@
    background: rgba(33, 37, 41, 0.5);
    width: 445px;
    height: 66px;
+   
+
+   @media (max-width: v.$media_md) {
+      position: absolute;
+      inset: unset;
+   }
 }
 
 
