@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;700&family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;700&family=Roboto:wght@400;500&display=swap"rel="stylesheet"/>
     <link rel="icon" href="assets/favicon-16x16.png" />
     <link rel="stylesheet" href="dist/main.css" />
     <title>Aveij</title>
     <script src="js/accordion.js" defer></script>
-    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <header class="header none" aria-label="header section">
+    <header class="header none1" aria-label="header section">
       <div class="container">
         <div class="header__wrapper">
           <a href="" class="logo">
@@ -45,7 +41,7 @@
       </div>
     </header>
     <main class="main" aria-label="main content">
-      <section class="hero-section none" aria-label="hero section">
+      <section class="hero-section none1" aria-label="hero section">
         <div class="container">
           <div class="hero">
             <div class="hero__up">
@@ -65,7 +61,7 @@
           </div>
         </div>
       </section>
-      <section class="section-time none" aria-label="section time">
+      <section class="section-time none1" aria-label="section time">
         <div class="container">
           <div class="time">
             <h2 class="time__title">Более 5 лет создаем мебель для вашего комфорта</h2>
@@ -94,7 +90,7 @@
           </div>
         </div>
       </section>
-      <section class="section-accordion none">
+      <section class="section-accordion none1" aria-label="section accordion">
         <div class="container accordion__container">
           <h2 class="accordion__title">Как мы работаем</h2>
             <div class="accordion__inner">
@@ -144,7 +140,7 @@
             </div>
         </div>
       </section>
-      <section class="section-projects none1">
+      <section class="section-projects none1" aria-label="section projects">
         <div class="container">
           <div class="projects">
             <h2 class="projects__title">Проекты</h2>
@@ -225,7 +221,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews" aria-label="reviews section">
+      <section class="reviews none1" aria-label="reviews section">
         <div class="container">
           <h2 class="reviews__title">Отзывы</h4>
           <ul class="reviews-wrapper">
@@ -259,6 +255,66 @@
           </ul>
         </div>
       </section>
+      <section class="contacts none1" aria-label="section contacts">
+        <div class="container">
+          <div class="contacts-wrapper">
+            <img src="./assets/webp/contacts.webp" alt="livingroom" class="contacts__img">
+            <div class="contacts__desc">
+              <div class="contacts__desc-top">
+                <h2 class="contacts__title">Хотите заказать проект?</h2>
+                <p class="contacts__text">Оставьте заявку, и мы вам перезвоним</p>
+              </div>
+              <form autocomplete="on" method="get" action="#" class="form">
+                <div class="form-inner">
+                  <div class="form-group">
+                    <input required id="name" type="text" class="form-input">
+                    <label for="name" class="form-label">Имя</label>
+                  </div>
+                  <div class="form-group">
+                    <input required id="email" type="email" class="form-input">
+                    <label for="email" class="form-label">E-mail</label>
+                  </div>
+                  <div class="form-group">
+                    <input required id="phone" type="tel" class="form-input">
+                    <label for="phone" class="form-label">Телефон</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn-from">Оставить заявку</button>
+              </form>
+              <ul class="download">
+                <li class="download-item">
+                  <a href="#!" class="download-link">
+                    <img src="./assets/contacts/apple.png" alt="Apple Store">
+                  </a>
+                </li>
+                <li class="download-item">
+                  <a href="#!" class="download-link">
+                    <img src="./assets/contacts/google-play.png" alt="Google Play">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer none" aria-label="footer section">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer__copyright">
+              <p class="footer__copyright-text">© 2023 Aveji</p>
+              <p class="footer__copyright-text">Все права защищены</p>
+            </div>
+            <ul class="footer__policy">
+              <li class="footer__policy-item">Политика конфеденциальности</li>
+              <li class="footer__policy-item"> Оплата и доставка</li>
+            </ul>
+            <ul class="footer__social">
+              <li class="footer__social-item">Вконтакте</li>
+              <li class="footer__social-item">Телеграм</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
