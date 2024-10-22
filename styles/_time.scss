@@ -2,7 +2,7 @@
 @use 'mixins' as m;
 
 .section-time {
-   padding: 0 0 120px 0;
+   padding: 30px 0 120px 0;
 
    @media (max-width: v.$media_md) {
       padding: 0 0 80px 0;
@@ -14,19 +14,12 @@
 }
 
 .time {
-   @include m.d-flex($justify: unset, $align: star, $wrap: unset, $direction: row, $column-gap: 228px, $row-gap: 0);
+   @include m.d-flex($justify: unset, $align: unset, $wrap: unset, $direction: row, $column-gap: 228px, $row-gap: 0);
 
    @media (max-width: v.$media_lg) {
-      @include m.d-flex($justify: unset, $align: star, $wrap: unset, $direction: row, $column-gap: 100px, $row-gap: 0);
+      @include m.d-flex($justify: unset, $align: flex-start, $wrap: unset, $direction: column, $column-gap: 100px, $row-gap: 0);
    }
 
-   @media (max-width: v.$media_md) {
-      @include m.d-flex($justify: unset, $align: star, $wrap: unset, $direction: row, $column-gap: 70px, $row-gap: 0);
-   }
-
-   @media (max-width: v.$media_sm) {
-      @include m.d-flex($justify: unset, $align: center, $wrap: unset, $direction: column, $column-gap: 70px, $row-gap: 0);
-   }
 }
 .time__title {
    font-weight: 400;
@@ -36,19 +29,8 @@
    height: 200px;
    margin-top: -25px;
    @media (max-width: v.$media_lg) {
-      font-size: 38px;
-      max-width: 380px;
-    }
-
-    @media (max-width: v.$media_md) {
-      font-size: 30px;
-      max-width: 300px;
-      margin-top: -15px;
-   }
-
-   @media (max-width: v.$media_sm) {
       display: none;
-   }
+    }
 }
 
 .time__title-mobile {
@@ -56,10 +38,9 @@
    font-size: 20px;
    font-weight: 400;
 
-   @media (max-width: v.$media_sm) {
+   @media (max-width: v.$media_lg) {
       margin-bottom: 20px;
       display: flex;
-      align-items: start;
    }
 }
 
@@ -73,6 +54,10 @@
 .time__text {
    max-width: 428px;
    width: 100%;
+
+   @media (max-width: v.$media_lg) {
+      max-width: 100%;
+   }
 }
 
 .text {
@@ -106,7 +91,14 @@
          display: block;
       }      
    }
+   @media (max-width: v.$media_lg) {
+      display: flex;
+      justify-content: space-between;
+      max-width: 100%;
+   }
+
    @media (max-width: v.$media_sm) {
       max-width: 164px;
+      flex-direction: column;
    }
 }
