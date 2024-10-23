@@ -15,6 +15,9 @@ body {
    margin: 0;
    color: v.$black-color;
 
+   &.lock {
+      overflow: hidden;
+   }
 }
 
 .container {
