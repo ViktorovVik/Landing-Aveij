@@ -24,12 +24,9 @@
    }
 
    @media (max-width: v.$media_md) {
-      gap: 100px;
+      display: none;
    }
 
-   @media (max-width: 653px) {
-      gap: 50px;
-   }
 }
 
 .nav {
