@@ -1,5 +1,6 @@
 @use 'vars' as v;
 
+
 * {
    box-sizing: border-box;
 }
@@ -8,8 +9,10 @@ html {
    scroll-behavior: smooth;
 }
 
+
 body {
    font-family: 'Roboto', sans-serif;
+   line-height: 1.4;
    line-height: 1.4;
    font-weight: 400;
    margin: 0;
@@ -25,6 +28,7 @@ body {
       padding: 0 15px;
       margin: 0 auto;
 }
+   
    
 
 h1,
@@ -42,8 +46,9 @@ figure {
 }
 
 button,
-input {
-   background: none;
+input,
+input,
+a {
    outline: none;
    border: none;
    background: none;
@@ -58,7 +63,6 @@ li {
 a {
    color: unset;
    text-decoration: none;
-   cursor: pointer;
 }
 
 .none {
