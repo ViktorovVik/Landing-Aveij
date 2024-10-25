@@ -16,7 +16,7 @@ body {
    color: v.$black-color;
 
    &.lock {
-      overflow: hidden;
+      overflow: hidden !important;
    }
 }
 
