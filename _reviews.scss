@@ -1,0 +1,62 @@
+@use 'vars' as v;
+@use 'mixins' as m;
+
+.reviews {
+   padding: 0 0 120px 0;
+
+   @media (max-width: v.$media_xl) {
+      padding: 0 0 50px 0;
+   }
+
+   @media (max-width: v.$media_sm) {
+      padding: 0 0 30px 0;
+   }
+}
+
+.reviews__title {
+   margin: 0 0 30px 0;
+   font-size: 48px;
+   color: v.$black-color;
+   font-weight: 400;
+
+   @media (max-width: v.$media_sm) {
+      font-size: 28px;
+      margin: 0 0 15px 0;
+   }
+}
+.reviews-wrapper {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(min(21.25rem, 100%), 1fr));
+   gap: 0.5rem;
+   
+
+   @media (max-width: v.$media_xl) {
+      gap: 1rem;
+   }
+}
+.reviews__item {
+   max-width: 445px;
+   border: 1px solid v.$black-color;
+}
+
+.reviews-card {
+   padding: 2rem;
+   @include m.d-flex($justify: center, $align: center, $wrap: nowrap, $direction: column, $column-gap: 0, $row-gap: 0);
+}
+
+.reviews-card__icon {
+   margin: 0 0 30px 0;
+}
+
+.reviews-card__subtitle {
+   margin: 0 0 20px 0;
+   font-size: 18px;
+   color: v.$black-color;
+
+   
+}
+.reviews-card__text {
+   line-height: 1.4;
+   text-align: center;
+   color: v.$black-color;
+}

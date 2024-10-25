@@ -1,0 +1,57 @@
+@use 'vars' as v;
+@use 'mixins' as m;
+
+.form {
+   margin-bottom: 1.75rem;
+}
+
+.form-group {
+   margin-bottom: 1rem;
+   position: relative;
+   transition: 0.1s;
+}
+.form-input {
+   padding-left: 5rem;
+   padding-top: 0.313rem;
+    padding-bottom: 0.75rem;
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+    background: #ffffff;
+    border-bottom: 1px solid v.$black-color;
+
+    &:focus,
+    &:valid {
+      border-bottom: 1px solid v.$accent-color;
+    }
+
+    &-modal {
+      background: #dddddd;
+      font-size: 18px;
+    }
+}
+.form-label {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: block;
+   transition: 0.3s;
+}
+
+.btn-from {
+   padding: 12px 20px;
+   max-width: 176px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.4;
+   letter-spacing: 0.6px;
+   text-align: center;
+   color: #fff;
+   background:  v.$black-color;
+   transition: ease-in .3s;
+   
+   &:hover {
+      background:  v.$accent-color;
+      color:  v.$black-color;
+   }
+}
