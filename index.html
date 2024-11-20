@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon-16x16.png" />
+    <link rel="stylesheet" href="dist/main.css" />
+    <title>Aveij</title>
+    <script src="js/accordion.js" defer type="module"></script>
+    <script src="js/mobile-menu.js" defer type="module"></script>
+    <script src="js/modal.js" defer type="module"></script>
+  </head>
+  <body>
+    <header class="header none1" aria-label="header section">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="" class="logo">
+            <img src="./assets/logo/logo.svg" alt="Aveij" />
+          </a>
+          <div class="header__content">
+            <nav class="header__nav nav" aria-label="header navigation">
+              <ul class="nav__list" aria-label="header nav list links">
+                <li class="nav__list-item">
+                  <a href="#about" class="nav__list-link">О нас</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#projects" class="nav__list-link">Проекты</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#accordion" class="nav__list-link">Материалы</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#reviews" class="nav__list-link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="tel:79999999999" class="phone">+7 999 999 99 99</a>
+          </div>
+          <div class="burger-menu">
+            <div class="burger__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <nav class="burger__body">
+              <a href="index.html" class="burger__logo">
+                <img src="./assets/logo/logo.svg" alt="Aveji" />
+              </a>
+              <ul class="burger__list">
+                <li class="burger__item">
+                  <a href="#about" class="burger__link">О нас</a>
+                </li>
+                <li class="burger__item">
+                  <a href="#projects" class="burger__link">Проекты</a>
+                </li>
+                <li class="burger__item">
+                  <a href="#accordion" class="burger__link">Материалы</a>
+                </li>
+                <li class="burger__item">
+                  <a href="#reviews" class="burger__link">Отзывы</a>
+                </li>
+              </ul>
+              <ul class="burger__info">
+                <li class="burger__info-item">
+                  <a href="#!" class="burger__link">Вконтакте</a>
+                </li>
+                <li class="burger__info-item">
+                  <a href="#!" class="burger__link">Телеграм</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main" aria-label="main content">
+      <section class="hero-section none1" aria-label="hero section">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__up">
+              <h1 class="hero__title">
+                Эксклюзивная и нестандартная мебель для дома
+              </h1>
+              <a href="#modal-window" class="hero__btn js-modal-open"
+                >Заказать проект</a
+              >
+            </div>
+            <div class="hero__offer">
+              <img
+                class="hero__mobile-img"
+                src="./assets/webp/mobile-img.webp"
+                alt="exclusive furniture"
+              />
+              <div class="hero__offer-left">
+                <p class="hero__offer-text">
+                  Мы можем произвести любую мебель для вашего проекта и найти
+                  производственное решение любой задумки.
+                </p>
+                <img
+                  src="./assets/webp/hero-small.webp"
+                  alt=""
+                  class="hero__offer-img hero__offer-small"
+                />
+              </div>
+              <img
+                src="./assets/webp/hero-big.webp"
+                alt="exclusive furniture"
+                class="hero__offer-img hero__offer-big"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-time none1" id="about" aria-label="section time">
+        <div class="container">
+          <div class="time">
+            <h2 class="time__title">
+              Более 5 лет создаем мебель для вашего комфорта
+            </h2>
+            <h2 class="time__title-mobile">О компании</h2>
+            <div class="time__content">
+              <div class="time__text text">
+                <p class="text__about">
+                  Мы — команда профессионалов, которые могут произвести любую
+                  мебель для вашего проекта, а также найти производственное
+                  решение любой задумки.
+                </p>
+                <p class="text__about">
+                  Наша основная цель — реализовывать самые смелые задумки, и
+                  делать это качественно и аккуратно.
+                </p>
+                <p class="text__about">
+                  В качестве материалов мы используем натуральные — стекло,
+                  дерево, бетон, камень, металл и эпоксидную смолу.
+                </p>
+              </div>
+              <ul class="benefits">
+                <li class="benefits__item">
+                  <strong>1 год</strong>
+                  <span>гарантии на всю продукцию</span>
+                </li>
+                <li class="benefits__item">
+                  <strong>300+</strong>
+                  <span>выполненных проектов</span>
+                </li>
+                <li class="benefits__item">
+                  <strong>15 дней</strong>
+                  <span>срок производства</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-accordion none1"
+        id="accordion"
+        aria-label="section accordion"
+      >
+        <div class="container accordion__container">
+          <h2 class="accordion__title">Как мы работаем</h2>
+          <div class="accordion__inner">
+            <p class="accordion__subtitle">
+              Алгоритм работы с нами для удобства и понимания проекта
+            </p>
+            <div class="accordion__block">
+              <div class="accordion__item" data-accordion-item>
+                <div class="accordion__trigger">
+                  <h4 class="accordion__trigger--title">Идея<span></span></h4>
+                  <div class="accordion__content">
+                    <p class="accordion__content--text">
+                      Клиент приходит к нам с идеей. Это может быть изображение
+                      эскиз или другой референс. А мы думаем над тем, как это
+                      реализовать, делаем технические чертежи и предлагаем
+                      решения по материалам.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item" data-accordion-item>
+                <div class="accordion__trigger">
+                  <h4 class="accordion__trigger--title">Техническое задание</h4>
+                  <div class="accordion__content">
+                    <p class="accordion__content--text">
+                      Вместе с клиентом формулируем корректное ТЗ, которое
+                      включает в себя визуализацию изделия, эскизный чертёж
+                      с габаритами, информацию по материалам и отделке, срок
+                      реализации проекта и другие обязательные пункты.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item" data-accordion-item>
+                <div class="accordion__trigger">
+                  <h4 class="accordion__trigger--title">
+                    Коммерческое предложение
+                  </h4>
+                  <div class="accordion__content">
+                    <p class="accordion__content--text">
+                      Предпочтительно используем натуральные материалы. Но любую
+                      смету можем оптимизировать, упростив материалы или
+                      конструктив. Сможем подстроиться под бюджет клиента
+                      и согласуем коммерческое предложение.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item" data-accordion-item>
+                <div class="accordion__trigger">
+                  <h4 class="accordion__trigger--title">
+                    Подготовка рабочего проекта
+                  </h4>
+                  <div class="accordion__content">
+                    <p class="accordion__content--text">
+                      Создадим рабочую документацию и чертежи. Это фундамент
+                      качественного производства. На этом этапе утверждаем
+                      с клиентом все габариты и материалы, чертежи и приступаем
+                      к производству.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item" data-accordion-item>
+                <div class="accordion__trigger">
+                  <h4 class="accordion__trigger--title">
+                    Производство и монтаж
+                  </h4>
+                  <div class="accordion__content">
+                    <p class="accordion__content--text">
+                      Производство занимает от 15 рабочих дней, в зависимости
+                      от сложности и объёма. Монтажом тоже занимаемся
+                      самостоятельно. Ведь мы это сделаем быстро и аккуратно.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-projects none1"
+        id="projects"
+        aria-label="section projects"
+      >
+        <div class="container">
+          <div class="projects">
+            <h2 class="projects__title">Проекты</h2>
+            <div class="projects__cards-wrapper">
+              <figure
+                class="info-card card--television"
+                aria-label="card television"
+              >
+                <img
+                  class="info-card__img"
+                  src="./assets/cards-webp/tv.webp"
+                  alt="television"
+                />
+                <div class="info-card__desc">
+                  <p class="info-card__text">Тумба под телевизор</p>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="11.8684"
+                      y1="2.18556e-08"
+                      x2="11.8684"
+                      y2="12"
+                      stroke="white"
+                    />
+                    <line x1="12" y1="0.5" y2="0.5" stroke="white" />
+                    <line
+                      x1="11.722"
+                      y1="0.985145"
+                      x2="0.985134"
+                      y2="11.722"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+                <a href="#!" class="info-card__link"></a>
+              </figure>
+              <figure class="info-card card--kitchen" aria-label="card kitchen">
+                <img
+                  class="info-card__img"
+                  src="./assets/cards-webp/kitchen.webp"
+                  alt="kitchen"
+                />
+                <div class="info-card__desc">
+                  <p class="info-card__text">Кухонный гарнитур</p>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="11.8684"
+                      y1="2.18556e-08"
+                      x2="11.8684"
+                      y2="12"
+                      stroke="white"
+                    />
+                    <line x1="12" y1="0.5" y2="0.5" stroke="white" />
+                    <line
+                      x1="11.722"
+                      y1="0.985145"
+                      x2="0.985134"
+                      y2="11.722"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+                <a href="#!" class="info-card__link"></a>
+              </figure>
+              <figure
+                class="info-card card--living-room"
+                aria-label="card living room"
+              >
+                <img
+                  class="info-card__img"
+                  src="./assets/cards-webp/living-room.webp"
+                  alt="living room"
+                />
+                <div class="info-card__desc">
+                  <p class="info-card__text">Мягкая мебель</p>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="11.8684"
+                      y1="2.18556e-08"
+                      x2="11.8684"
+                      y2="12"
+                      stroke="white"
+                    />
+                    <line x1="12" y1="0.5" y2="0.5" stroke="white" />
+                    <line
+                      x1="11.722"
+                      y1="0.985145"
+                      x2="0.985134"
+                      y2="11.722"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+                <a href="#!" class="info-card__link"></a>
+              </figure>
+              <figure
+                class="info-card card--bathroom"
+                aria-label="card bathroom"
+              >
+                <img
+                  class="info-card__img"
+                  src="./assets/cards-webp/bathroom.webp"
+                  alt="bathroom"
+                />
+                <div class="info-card__desc">
+                  <p class="info-card__text">Мебель для ванной комнаты</p>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="11.8684"
+                      y1="2.18556e-08"
+                      x2="11.8684"
+                      y2="12"
+                      stroke="white"
+                    />
+                    <line x1="12" y1="0.5" y2="0.5" stroke="white" />
+                    <line
+                      x1="11.722"
+                      y1="0.985145"
+                      x2="0.985134"
+                      y2="11.722"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+                <a href="#!" class="info-card__link"></a>
+              </figure>
+              <figure class="info-card card--bedroom" aria-label="card bedroom">
+                <img
+                  class="info-card__img"
+                  src="./assets/cards-webp/bedroom.webp"
+                  alt="bedroom"
+                />
+                <div class="info-card__desc">
+                  <p class="info-card__text">Мебель для спальни</p>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="11.8684"
+                      y1="2.18556e-08"
+                      x2="11.8684"
+                      y2="12"
+                      stroke="white"
+                    />
+                    <line x1="12" y1="0.5" y2="0.5" stroke="white" />
+                    <line
+                      x1="11.722"
+                      y1="0.985145"
+                      x2="0.985134"
+                      y2="11.722"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+                <a href="#!" class="info-card__link"></a>
+              </figure>
+              <figure class="info-card card--dresser" aria-label="card dresser">
+                <img
+                  class="info-card__img"
+                  src="./assets/cards-webp/dresser.webp"
+                  alt="dresser"
+                />
+                <div class="info-card__desc">
+                  <p class="info-card__text">Комод</p>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="11.8684"
+                      y1="2.18556e-08"
+                      x2="11.8684"
+                      y2="12"
+                      stroke="white"
+                    />
+                    <line x1="12" y1="0.5" y2="0.5" stroke="white" />
+                    <line
+                      x1="11.722"
+                      y1="0.985145"
+                      x2="0.985134"
+                      y2="11.722"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+                <a href="#!" class="info-card__link"></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews none1" id="reviews" aria-label="reviews section">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <ul class="reviews-wrapper">
+            <li class="reviews__item">
+              <article class="reviews-card">
+                <div class="reviews-card__icon">
+                  <img src="./assets/webp/quotation-marks.svg" alt="кавычки" />
+                </div>
+                <h3 class="reviews-card__subtitle">Игорь Антонов</h3>
+                <p class="reviews-card__text">
+                  Обратилась к Aveji по рекомендации. Команда сразу поняла,
+                  какой дизайн я хочу. Предоставили несколько вариантов
+                  и в течение недели сделали наброски. Итог понравился, все
+                  на высшем уровне.
+                </p>
+              </article>
+            </li>
+            <li class="reviews__item">
+              <article class="reviews-card">
+                <div class="reviews-card__icon">
+                  <img src="./assets/webp/quotation-marks.svg" alt="кавычки" />
+                </div>
+                <h3 class="reviews-card__subtitle">Ольга Иванова</h3>
+                <p class="reviews-card__text">
+                  После пары заказов у компании Aveji убедилась, что за мебелью
+                  теперь только к ним. Абсолютно любые решения, в любых размерах
+                  и форм-факторе, то что нужно!
+                </p>
+              </article>
+            </li>
+            <li class="reviews__item">
+              <article class="reviews-card">
+                <div class="reviews-card__icon">
+                  <img src="./assets/webp/quotation-marks.svg" alt="кавычки" />
+                </div>
+                <h3 class="reviews-card__subtitle">Аркадий Макаров</h3>
+                <p class="reviews-card__text">
+                  Aveji — настоящие профессионалы своего дела. Быстро поняли мою
+                  задумку, сделали дизайн, согласовали и изготовили мебель.
+                  А потом еще и бесплатно все собрали на месте. Большое спасибо!
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section
+        class="contacts none1"
+        id="contacts"
+        aria-label="section contacts"
+      >
+        <div class="container">
+          <div class="contacts-wrapper">
+            <img
+              src="./assets/webp/contacts.webp"
+              alt="livingroom"
+              class="contacts__img"
+            />
+            <div class="contacts__desc">
+              <div class="contacts__desc-top">
+                <h2 class="contacts__title">Хотите заказать проект?</h2>
+                <p class="contacts__text">
+                  Оставьте заявку, и мы вам перезвоним
+                </p>
+              </div>
+              <form autocomplete="on" method="get" action="#" class="form">
+                <div class="form-inner">
+                  <div class="form-group">
+                    <input required id="name" type="text" class="form-input" />
+                    <label for="name" class="form-label">Имя</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      required
+                      id="email"
+                      type="email"
+                      class="form-input"
+                    />
+                    <label for="email" class="form-label">E-mail</label>
+                  </div>
+                  <div class="form-group">
+                    <input required id="phone" type="tel" class="form-input" />
+                    <label for="phone" class="form-label">Телефон</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn-from">Оставить заявку</button>
+              </form>
+              <ul class="download">
+                <li class="download-item">
+                  <a href="#!" class="download-link">
+                    <img src="./assets/contacts/apple.png" alt="Apple Store" />
+                  </a>
+                </li>
+                <li class="download-item">
+                  <a href="#!" class="download-link">
+                    <img
+                      src="./assets/contacts/google-play.png"
+                      alt="Google Play"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer none1" aria-label="footer section">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer__copyright">
+              <p class="footer__copyright-text">© 2023 Aveji</p>
+              <p class="footer__copyright-text">Все права защищены</p>
+            </div>
+            <ul class="footer__policy">
+              <li class="footer__policy-item">
+                <a href="#!" class="footer__policy-link"
+                  >Политика конфеденциальности</a
+                >
+              </li>
+              <li class="footer__policy-item">
+                <a href="#!" class="footer__policy-link">Оплата и доставка</a>
+              </li>
+            </ul>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a href="#!" class="footer__social-link">Вконтакте</a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#!" class="footer__social-link">Телеграм</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <div class="modal modal--l" id="modal-window">
+        <div class="modal__dialog">
+          <div class="modal__dialog-header">
+            <div class="modal__dialog-header-content">Заказать проект</div>
+            <div class="modal__dialog-header-close">
+              <button class="js-modal-close modal__dialog-header-close-btn">
+                <span>&times;</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal__dialog-body">
+            <div>
+              <form autocomplete="on" method="get" action="#" class="form">
+                <div class="form-inner">
+                  <div class="form-group">
+                    <input
+                      required
+                      id="name-modal"
+                      type="text"
+                      class="form-input form-input-modal"
+                    />
+                    <label for="name" class="form-label">Имя</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      required
+                      id="email-modal"
+                      type="email"
+                      class="form-input form-input-modal"
+                    />
+                    <label for="email" class="form-label">E-mail</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      required
+                      id="phone-modal"
+                      type="tel"
+                      class="form-input form-input-modal"
+                    />
+                    <label for="phone" class="form-label">Телефон</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn-from">Оставить заявку</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal__dialog-footer">
+            <button class="js-modal-close modal__dialog-footer-close-btn">
+              Закрыть
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
